@@ -12,5 +12,8 @@ string and the number of characters the string contains.
 1. Create a program that prompts for a quote and an author. Example: _Obi Wan said, "These are not 
 the droids you are looking for"_
    * [Basic Quote](03-printing-quotes/quote-basic.go)
+1. Create a simple mad-lib program that prompts for a noun, a verb, an adverb, and an adjective 
+and injects those into a story that you create. Accept a noun, verb, adjective, and adverb.
+   * [Basic Mad Lib](04-mad-lib/basic-mad-lib.go)
 
 [e4p]: https://pragprog.com/book/bhwb/exercises-for-programmers
