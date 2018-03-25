@@ -35,7 +35,10 @@ to retire and display the calculation.
 
 7. **Rectangular Room:** Create a program that calculates the area of a room. Prompt the user for 
 the length and width of the room in feet. Then display the area in both square feet and square 
-meters, using this equation: `m**m = f**f * 0.09290304`
+meters, using the following equation:
+   ```
+   m**m = f**f * 0.09290304
+   ```
    * [Rectangular Area](ch07-rectangular-area/area.go)
    * [Rectangular Area Tests](ch07-rectangular-area/area_test.go)
 
