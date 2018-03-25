@@ -15,5 +15,9 @@ the droids you are looking for"_
 1. Create a simple mad-lib program that prompts for a noun, a verb, an adverb, and an adjective 
 and injects those into a story that you create. Accept a noun, verb, adjective, and adverb.
    * [Basic Mad Lib](04-mad-lib/basic-mad-lib.go)
+1. Write a program that prompts for two numbers. Print the sum, difference, product, and quotient 
+of those numbers as shown in the example output.
+   * [Simple Math](05-simple-math/simple_math.go)
+   * [Simple Math Tests](05-simple-math/simple_math_test.go)
 
 [e4p]: https://pragprog.com/book/bhwb/exercises-for-programmers
