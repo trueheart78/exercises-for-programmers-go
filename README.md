@@ -2,7 +2,11 @@
 
 Last time it was Ruby. This time, Go is what I will be using.
 
+## Book
+
 [Exercises for Programmers on PragProg.com][e4p]
+
+## Exercises
 
 1. **Saying Hello:** Create a program that prompts for your name and prints a greeting using your name.
    * [Basic Hello](01-say-hello/hello-basic.go)
