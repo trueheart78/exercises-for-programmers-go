@@ -19,5 +19,10 @@ and injects those into a story that you create. Accept a noun, verb, adjective, 
 of those numbers as shown in the example output.
    * [Simple Math](05-simple-math/simple_math.go)
    * [Simple Math Tests](05-simple-math/simple_math_test.go)
+1. Create a program that determines how many years you have left until retirement and the year you 
+can retire. It should prompt for your current age and the age you want to retire and display the
+calculation.
+   * [Retirement Calculator](06-retirement-calc/retirement_calc.go)
+   * [Retirement Calculator Tests](06-retirement-calc/retirement_calc_test.go)
 
 [e4p]: https://pragprog.com/book/bhwb/exercises-for-programmers
