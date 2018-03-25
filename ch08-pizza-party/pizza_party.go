@@ -21,8 +21,7 @@ func newPizzaParty(people, pizzas, slicesPer string) pizzaParty {
 
 func (p pizzaParty) guestSlices() int {
 	totalSlices := p.pizzas * p.pizzaSize
-	var guestSlices float64
-	guestSlices = float64(totalSlices) / float64(p.guests)
+	guestSlices := float64(totalSlices) / float64(p.guests)
 	return int(math.Floor(guestSlices))
 }
 
