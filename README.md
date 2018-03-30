@@ -49,4 +49,11 @@ the number of leftover pieces.
    * [Pizza Party](ch08-pizza-party/pizza_party.go)
    * [Pizza Party Tests](ch08-pizza-party/pizza_party_test.go)
 
+9. **Paint Calculator:** Calculate gallons of paint needed to paint the ceiling of a room. Prompt 
+for the length and width, and assume one gallon covers 350 square feet. Display the number of 
+  gallons needed to paint the ceiling as a whole number.
+   * [Paint Calculator](ch09-paint-calculator/paint_calc.go)
+   * [Paint Calculator Tests](ch09-paint-calculator/paint_calc_test.go)
+
+
 [e4p]: https://pragprog.com/book/bhwb/exercises-for-programmers
