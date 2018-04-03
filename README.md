@@ -51,9 +51,16 @@ the number of leftover pieces.
 
 9. **Paint Calculator:** Calculate gallons of paint needed to paint the ceiling of a room. Prompt 
 for the length and width, and assume one gallon covers 350 square feet. Display the number of 
-  gallons needed to paint the ceiling as a whole number.
+gallons needed to paint the ceiling as a whole number.
    * [Paint Calculator](ch09-paint-calculator/paint_calc.go)
    * [Paint Calculator Tests](ch09-paint-calculator/paint_calc_test.go)
 
+10. **Self-Checkout:** Create a simple self-checkout system. Prompt for the prices and quantities 
+of three items. Calculate the subtotal of the items. Then calculate the tax using a tax rate of 5.5%.
+Print out the line items with the quantity and total, and then print out the subtotal, tax amount, and total.
+   * [Checkout Pkg](ch10-self-checkout/checkout/checkout.go)
+   * [Checkout Pkg Tests](ch10-self-checkout/checkout/checkout_test.go)
+   * [Self Checkout](ch10-self-checkout/self_checkout.go)
+   * [Self Checkout Tests](ch10-self-checkout/self_checkout_test.go)
 
 [e4p]: https://pragprog.com/book/bhwb/exercises-for-programmers
