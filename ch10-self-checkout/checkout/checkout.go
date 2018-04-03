@@ -7,31 +7,39 @@ import (
 const TaxRate = 5.5
 
 type Register struct {
-	items []Item
+	Items []Item
 }
 
 type Item struct {
-	name  string
-	cents int
+	Name            string
+	Cents, Quantity int
 }
 
-func newItem(name, cost string) Item {
+func (i Item) Cost() float64 {
+	return float64(i.Cents) / 100
+}
+
+func newItem(name, cost, qty string) Item {
 	parsedCost, err := strconv.ParseFloat(cost, 64)
-	var cents int
+	var cents, quantity int
 	if err == nil {
 		cents = int(parsedCost * 100)
 	}
-	return Item{name, cents}
+	parsedQty, err := strconv.Atoi(qty)
+	if err == nil {
+		quantity = parsedQty
+	}
+	return Item{name, cents, quantity}
 }
 
 func (r Register) itemCount() int {
-	return len(r.items)
+	return len(r.Items)
 }
 
-func (r *Register) AddItem(name, cost string) bool {
-	item := newItem(name, cost)
-	if item.cents != 0 {
-		r.items = append(r.items, item)
+func (r *Register) AddItem(name, cost, qty string) bool {
+	item := newItem(name, cost, qty)
+	if item.Cents != 0 && item.Quantity != 0 {
+		r.Items = append(r.Items, item)
 		return true
 	}
 	return false
@@ -44,8 +52,8 @@ func (r Register) OutputCost() string {
 
 func (r Register) totalCost() int {
 	var sum int
-	for _, item := range r.items {
-		sum = sum + item.cents
+	for _, item := range r.Items {
+		sum = sum + (item.Cents * item.Quantity)
 	}
 	sum = int((1.0 + (TaxRate / 100)) * float64(sum))
 	return sum

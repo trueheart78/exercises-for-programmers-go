@@ -16,22 +16,26 @@ func main() {
 		fmt.Print("What is the cost of the item? $")
 		fmt.Scanln(&cost)
 
-		var n int
 		var err error
 		for {
 			fmt.Print("What is the qty of the item? ")
 			fmt.Scanln(&qty)
 
-			n, err = strconv.Atoi(qty)
+			_, err = strconv.Atoi(qty)
 			if err == nil {
 				break
 			}
 		}
 
-		for j := 0; j < n; j++ {
-			register.AddItem(name, cost)
-		}
+		register.AddItem(name, cost, qty)
 	}
 
+	fmt.Println("---------")
+	for i, item := range register.Items {
+		n := i + 1
+		fmt.Printf("%d. %v x %d @ %.2f each\n", n, item.Name, item.Quantity, item.Cost())
+	}
+
+	fmt.Println("---------")
 	fmt.Println("Total cost (with", checkout.TaxRate, "% tax) is $", register.OutputCost())
 }
