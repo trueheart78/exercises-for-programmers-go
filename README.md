@@ -61,6 +61,13 @@ Print out the line items with the quantity and total, and then print out the sub
    * [Checkout Pkg](ch10-self-checkout/checkout/checkout.go)
    * [Checkout Pkg Tests](ch10-self-checkout/checkout/checkout_test.go)
    * [Self Checkout](ch10-self-checkout/self_checkout.go)
-   * [Self Checkout Tests](ch10-self-checkout/self_checkout_test.go)
+
+11. **Currency Conversion:** Write a program that converts currency. Specifically, convert euros 
+to U.S. dollars. Prompt for the amount of money in euros you have, and prompt for the current 
+exchange rate of the euro. Print out the new amount in U.S. dollars. The formula for currency 
+conversion is `amount_to = (amount_from * rate_from) / rate_to`
+   * [Converter Pkg](ch11-currency-conversion/converter/converter.go)
+   * [Converter Pkg Tests](ch11-currency-conversion/converter/converter_test.go)
+   * [Currency Conversion](ch11-currency-conversion/currency.go)
 
 [e4p]: https://pragprog.com/book/bhwb/exercises-for-programmers
