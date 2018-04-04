@@ -18,6 +18,14 @@ func TestTaxRate(t *testing.T) {
 	t.Log("Pass: TestTaxRate()")
 }
 
+func TestItemCost(t *testing.T) {
+	item := newItem(name, cost, qty)
+	if item.Cost() != 12.99 {
+		t.Fatalf("Fail: expected %.2f, got %.2f", 12.99, item.Cost())
+	}
+	t.Log("Pass: TestItemCost()")
+}
+
 func TestNewItem(t *testing.T) {
 	item := newItem(name, cost, qty)
 	if item.Name != name {
