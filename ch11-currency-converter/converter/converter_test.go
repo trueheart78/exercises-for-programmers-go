@@ -2,13 +2,14 @@ package converter
 
 import (
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
-func TestSample(t *testing.T) {
-	received := "received"
-	expected := "expected"
-	if received != expected {
-		t.Fatalf("Fail: expected %v, got %v", expected, received)
-	}
-	t.Log("Pass: sample test")
+func TestUSDExchangeRate(t *testing.T) {
+	assert.Equal(t, 0.81268, USDExchangeRate)
+}
+
+func TestEuroExchangeRate(t *testing.T) {
+	assert.Equal(t, 1.2307, EuroExchangeRate)
 }
