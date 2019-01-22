@@ -58,9 +58,9 @@ that shows the input string and the number of characters the string contains.
 10. **Self-Checkout:** Create a simple self-checkout system. Prompt for the prices and quantities 
    of three items. Calculate the subtotal of the items. Then calculate the tax using a tax rate of 5.5%.
    Print out the line items with the quantity and total, and then print out the subtotal, tax amount, and total.
-   * [Checkout Pkg](ch10-self-checkout/checkout/checkout.go)
-   * [Checkout Pkg Tests](ch10-self-checkout/checkout/checkout_test.go)
-   * [Self Checkout](ch10-self-checkout/self_checkout.go)
+    * [Checkout Pkg](ch10-self-checkout/checkout/checkout.go)
+    * [Checkout Pkg Tests](ch10-self-checkout/checkout/checkout_test.go)
+    * [Self Checkout](ch10-self-checkout/self_checkout.go)
 
 11. **Currency Conversion:** Write a program that converts currency. Specifically, convert euros 
    to U.S. dollars. Prompt for the amount of money in euros you have, and prompt for the current 
@@ -68,9 +68,9 @@ that shows the input string and the number of characters the string contains.
    conversion is `amount_to = (amount_from * rate_from) / rate_to`, where `rate_to` is generally `1.0`.
    More details can be found on [Mathinary's Currency Conversion](http://www.mathinary.com/currency_conversion.jsp)
    page.
-   * [Converter Pkg](ch11-currency-conversion/converter/converter.go)
-   * [Converter Pkg Tests](ch11-currency-conversion/converter/converter_test.go)
-   * [Currency Conversion](ch11-currency-conversion/currency.go)
+    * [Converter Pkg](ch11-currency-conversion/converter/converter.go)
+    * [Converter Pkg Tests](ch11-currency-conversion/converter/converter_test.go)
+    * [Currency Conversion](ch11-currency-conversion/currency.go)
 
 12. **Computing Simple Interest:** Create a program that computes simple interest. Prompt for the
     principal amount, the rate as a percentage, and the time, and display the amount accrued
@@ -78,7 +78,7 @@ that shows the input string and the number of characters the string contains.
     principal amount, `r` is the annual rate of interest, `t` is the number of years the amount is
     invested, and `A` is the amount at the end of the investment. Example: `$1758 = 1500(1 + (0.043 × 4))`
 	More details can be found at [Simple Interest Calculator][simple interest calc].
-	* [Convert Pkg](ch12-computing-simple-interest/converter/converter.go)
+    * [Convert Pkg](ch12-computing-simple-interest/converter/converter.go)
 	* [Convert Pkg Tests](ch12-computing-simple-interest/converter/converter_test.go)
 	* [Interest Calculator](ch12-computing-simple-interest/interest.go)
 
