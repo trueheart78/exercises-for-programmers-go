@@ -76,10 +76,8 @@ that shows the input string and the number of characters the string contains.
     principal amount, the rate as a percentage, and the time, and display the amount accrued
     (principal + interest). The formula for simple interest is `A = P * (1 + rt)`, where `P` is the
     principal amount, `r` is the annual rate of interest, `t` is the number of years the amount is
-    invested, and `A` is the amount at the end of the investment.
-    More details can be found at [Simple Interest Calculator][simple interest calc].
-
-    Example: `$1758 = 1500(1 + (0.043 × 4))`
+    invested, and `A` is the amount at the end of the investment. Example: `$1758 = 1500(1 + (0.043 × 4))`
+	More details can be found at [Simple Interest Calculator][simple interest calc].
 	* [Convert Pkg](ch12-computing-simple-interest/converter/converter.go)
 	* [Convert Pkg Tests](ch12-computing-simple-interest/converter/converter_test.go)
 	* [Interest Calculator](ch12-computing-simple-interest/interest.go)
