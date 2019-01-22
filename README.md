@@ -79,8 +79,15 @@ that shows the input string and the number of characters the string contains.
     invested, and `A` is the amount at the end of the investment. Example: `$1758 = 1500(1 + (0.043 × 4))`
 	More details can be found at [Simple Interest Calculator][simple interest calc].
     * [Convert Pkg](ch12-computing-simple-interest/converter/converter.go)
-	* [Convert Pkg Tests](ch12-computing-simple-interest/converter/converter_test.go)
-	* [Interest Calculator](ch12-computing-simple-interest/interest.go)
+    * [Convert Pkg Tests](ch12-computing-simple-interest/converter/converter_test.go)
+    * [Interest Calculator](ch12-computing-simple-interest/interest.go)
+
+13. **Computing Compound Interest:**  Write a program to compute the value of an investment
+    compounded over time. The program should ask for the starting amount, the number of years to
+    invest, the interest rate, and the number of periods per year to compound.
+
+    The formula for compound interest is `A = P(1 + r/n)<sup>nt</sup>`.
 
 [e4p]: https://pragprog.com/book/bhwb/exercises-for-programmers
 [simple interest calc]: https://www.calculatorsoup.com/calculators/financial/simple-interest-plus-principal-calculator.php
+[compound interest calc]: https://www.calculatorsoup.com/calculators/financial/compound-interest-calculator.php
